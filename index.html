@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Shark Tank V5</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="hero-header">
+
+```
+<div class="floating-shark left-shark">
+    🦈
+</div>
+
+<div class="logo-container">
+
+    <img
+    src="assets/logo.png"
+    alt="AI Shark Tank Logo"
+    class="logo-image">
+
+    <p class="hero-tagline">
+        Pitch • Analyze • Fund
+    </p>
+
+</div>
+
+<div class="floating-shark right-shark">
+    🦈
+</div>
+```
+
+</header>
+
+<section class="hero-banner">
+
+```
+<div class="hero-card">
+
+    <h2>
+        🚀 Get Your Startup Evaluated By AI Investors
+    </h2>
+
+    <p>
+        Receive Funding Predictions, Valuation Estimates,
+        SWOT Analysis, Investor Opinions and Business Insights.
+    </p>
+
+</div>
+```
+
+</section>
+
+<section class="card form-card">
+
+<h2>Startup Submission</h2>
+
+<input
+type="text"
+id="startupName"
+placeholder="Startup Name">
+
+<select id="industry">
+
+<option value="">
+Select Industry
+</option>
+
+<option>AI</option>
+<option>FinTech</option>
+<option>EdTech</option>
+<option>Healthcare</option>
+<option>Cybersecurity</option>
+<option>E-Commerce</option>
+
+</select>
+
+<textarea
+id="startupIdea"
+rows="5"
+placeholder="Describe your startup idea"></textarea>
+
+<button onclick="analyzeStartup()">
+Analyze Startup
+</button>
+
+</section>
+
+<div id="dashboard" class="hidden">
+
+<section class="card score-card">
+
+<h2>Startup Score</h2>
+
+<div class="progress">
+<div id="progressBar" class="progress-bar"></div>
+</div>
+
+<h1 id="scoreText">0/100</h1>
+
+<h3 id="gradeText">
+Grade A+
+</h3>
+
+</section>
+
+<section class="stats-grid">
+
+<div class="stat-card funding">
+<h3>💰 Funding Offer</h3>
+<p id="fundingOffer">₹0</p>
+</div>
+
+<div class="stat-card valuation">
+<h3>💵 Valuation</h3>
+<p id="valuation">₹0</p>
+</div>
+
+<div class="stat-card unicorn">
+<h3>🦄 Unicorn Chance</h3>
+<p id="unicorn">0%</p>
+</div>
+
+<div class="stat-card confidence">
+<h3>🤝 Investor Confidence</h3>
+<p id="confidence">0%</p>
+</div>
+
+</section>
+
+<section class="dashboard-grid">
+
+<div class="card">
+
+<h2>🦈 Investor Panel</h2>
+
+<div class="investor-grid">
+
+<div class="investor-card">
+<h3>👨‍💻 Tech Shark</h3>
+<p id="tech"></p>
+</div>
+
+<div class="investor-card">
+<h3>💰 Finance Shark</h3>
+<p id="finance"></p>
+</div>
+
+<div class="investor-card">
+<h3>📈 Marketing Shark</h3>
+<p id="marketing"></p>
+</div>
+
+<div class="investor-card">
+<h3>🚀 Vision Shark</h3>
+<p id="vision"></p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Business Analytics</h2>
+
+<div class="analytics">
+
+<div>
+Market Potential
+<span id="market">0%</span>
+</div>
+
+<div>
+Scalability
+<span id="scale">0%</span>
+</div>
+
+<div>
+Revenue Potential
+<span id="revenue">0%</span>
+</div>
+
+<div>
+Investor Confidence
+<span id="investorConf">0%</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dashboard-grid">
+
+<div class="card">
+
+<h2>🎯 SWOT Analysis</h2>
+
+<ul id="swot"></ul>
+
+</div>
+
+<div class="card">
+
+<h2>🚨 Risk Analysis</h2>
+
+<p id="risk"></p>
+
+<hr>
+
+<h2>💼 Investment Deal</h2>
+
+<p id="deal"></p>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>❌ Rejection / Approval Reasons</h2>
+
+<ul id="reasons"></ul>
+
+</section>
+
+<section class="card verdict-card">
+
+<h1 id="verdict">
+Awaiting Analysis
+</h1>
+
+</section>
+
+<section class="download-section">
+
+<button
+class="download-btn"
+onclick="downloadReport()">
+
+📄 Download Full Report
+
+</div>
+
+</div>
+
+<footer class="copyright-footer">
+    © 2026 Manas Mhatre. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
